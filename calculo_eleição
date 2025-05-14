@@ -13,7 +13,7 @@ print(percentual_de_votos_em_branco,"%")
 
 
 
-#terminar
+#erro na linha 10
 print("DIGITE O numero de votos nulos")
 votos_nulos= int(input())
 print("DIGITE O NUMERO de votos em branco")
@@ -28,3 +28,29 @@ percentual_de_votos_em_branco=  (votos_em_branco/total_de_eleitores*100)
 print("votos em branco"): {percentual_de_votos_em_branco:.3f}("%")
 percentual_de_votos_validos= (votos_validos/total_de_eleitores*100)
 print("votos validos"): {percentual_de_votos_validos:.3f}("%")
+
+
+
+#codigo sem o erro
+
+print("DIGITE O número de votos nulos")
+votos_nulos = int(input())
+
+print("DIGITE O NÚMERO de votos em branco")
+votos_em_branco = int(input())
+
+print("DIGITE O NÚMERO de votos válidos")
+votos_validos = int(input())
+
+total_de_eleitores = votos_nulos + votos_em_branco + votos_validos
+print("Total de eleitores:", total_de_eleitores)
+
+percentual_de_votos_nulos = (votos_nulos / total_de_eleitores) * 100
+print(f"Percentual de votos nulos: {percentual_de_votos_nulos:.3f}%")
+
+percentual_de_votos_em_branco = (votos_em_branco / total_de_eleitores) * 100
+print(f"Percentual de votos em branco: {percentual_de_votos_em_branco:.3f}%")
+
+percentual_de_votos_validos = (votos_validos / total_de_eleitores) * 100
+print(f"Percentual de votos válidos: {percentual_de_votos_validos:.3f}%")
+
